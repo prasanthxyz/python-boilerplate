@@ -14,8 +14,14 @@
 1. Clone this repo
 2. Delete the `.git` folder and `README.md`
 3. (If required) Set up your new git repo in this folder
-4. Add your python code to `src`, and tests to `tests` directories.  
+4. Set up the virtual environment and install dependencies  
+   ```bash
+   python3 -m venv .venv
+   source .venv/bin/activate
+   pip install -r requirements.txt
+   ```
+5. Add your python code to `src`, and tests to `tests` directories.  
    You can change the directory name, but please make sure to update `setup.cfg`, `test.sh`, `.vscode/settings.json` wherever it is used
-5. (If required) Run `./format.sh` to format all code
-6. Run `./test.sh` to run all checks
+6. (If required) Run `./format.sh` to format all code
+7. Run `./test.sh` to run all checks
 
